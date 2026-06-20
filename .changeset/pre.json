@@ -1,8 +1,10 @@
 {
-    "mode": "pre",
-    "tag": "rc",
-    "initialVersions": {
-        "@floffah/astro-typst": "0.0.0"
-    },
-    "changesets": []
+  "mode": "pre",
+  "tag": "rc",
+  "initialVersions": {
+    "@floffah/astro-typst": "0.0.0"
+  },
+  "changesets": [
+    "green-stars-render"
+  ]
 }

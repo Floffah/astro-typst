@@ -1,12 +1,14 @@
 import { renderTypst } from "./render.js";
-import type { Plugin } from "vite";
+import type { PluginOption } from "vite";
 
 export interface TypstPluginOptions {
     include?: RegExp;
 }
 
 /** Transform imported `.typ` files into modules whose default export is HTML. */
-export function typst({ include = /\.typ$/ }: TypstPluginOptions = {}): Plugin {
+export function typst({
+    include = /\.typ$/,
+}: TypstPluginOptions = {}): PluginOption {
     return {
         name: "astro-typst",
         enforce: "pre",

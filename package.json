@@ -1,6 +1,6 @@
 {
     "name": "@floffah/astro-typst",
-    "version": "0.1.0-rc.1",
+    "version": "0.1.0",
     "description": "Typst rendering primitives, an Astro content loader, and a Vite plugin powered by WebAssembly.",
     "type": "module",
     "sideEffects": false,

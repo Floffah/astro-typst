@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "target": "ES2023",
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "lib": ["ES2023"],
+        "strict": true,
+        "noUncheckedIndexedAccess": true,
+        "exactOptionalPropertyTypes": true,
+        "skipLibCheck": true,
+        "types": ["bun"]
+    },
+    "include": ["src/**/*.ts", "tests/**/*.ts", "wasm/**/*.d.ts"]
+}

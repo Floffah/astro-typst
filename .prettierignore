@@ -1,0 +1,7 @@
+.codegraph/
+.idea/
+crates/typst-wasm/target/
+dist/
+node_modules/
+wasm/
+bun.lock

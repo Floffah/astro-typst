@@ -1,0 +1,10 @@
+.codegraph/
+.git/
+.idea/
+crates/
+node_modules/
+scripts/
+src/
+tests/
+*.log
+tsconfig*.json

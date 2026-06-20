@@ -2,7 +2,7 @@
 
 Typst HTML rendering primitives, an Astro content loader, and a Vite plugin powered by WebAssembly.
 
-This package differs from the real astro-typst as it is targeted at Astro content collections and rendering to true HTML rather than SVGs. If you want to be able to import Typst documents as Astro components or use a more configurable vite plugin, this project is not for you.
+This package differs from the real astro-typst as this is targeted at Astro content collections and rendering to true stylable HTML instead of SVGs using the experimental HTML support added in Typst v0.13 & v0.15. If you need to be able to import Typst documents as Astro components or use a more configurable vite plugin, use astro-typst instead.
 
 You can see this project in action at https://github.com/Floffah/luminous! I also have a full Astro theme for worldbuilding based on Typst at https://github.com/Floffah/astro-world
 

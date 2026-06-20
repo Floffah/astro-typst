@@ -9,7 +9,7 @@ export default defineConfig({
     sourcemap: true,
     minify: process.env.CI === "true",
     deps: {
-        neverBundle: ["astro", "vite", /^\.\.\/wasm\//],
+        neverBundle: ["astro", "vite"],
     },
     outExtensions: (context) => {
         if (context.format === "cjs") {

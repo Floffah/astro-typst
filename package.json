@@ -70,9 +70,10 @@
         }
     },
     "scripts": {
-        "build:wasm": "wasm-pack build crates/typst-wasm --release --target nodejs --out-dir ../../wasm --no-pack && bun run scripts/write-wasm-package.ts",
+        "build:wasm": "wasm-pack build crates/typst-wasm --release --target web --out-dir ../../wasm --no-pack && bun run scripts/write-wasm-package.ts",
         "build:ts": "tsdown",
         "build": "bun run build:wasm && bun run build:ts",
+        "smoke": "bun run build && bun run scripts/smoke.ts",
         "lint": "tsc -p tsconfig.json --noEmit && eslint . --ext .ts",
         "format": "prettier --write .",
         "format:check": "prettier --check .",

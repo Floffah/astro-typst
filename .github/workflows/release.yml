@@ -29,6 +29,13 @@ jobs:
               with:
                   node-version: "lts/*"
             - uses: oven-sh/setup-bun@v2
+            - name: Install Rust
+              uses: dtolnay/rust-toolchain@stable
+              with:
+                  targets: wasm32-unknown-unknown
+            - uses: Swatinem/rust-cache@v2
+              with:
+                  workspaces: crates/typst-wasm -> target
             - uses: taiki-e/install-action@wasm-pack
 
             - name: Install dependencies
